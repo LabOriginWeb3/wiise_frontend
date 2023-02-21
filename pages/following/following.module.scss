@@ -1,0 +1,60 @@
+.follow {
+    width: 50%;
+    max-width: 800px;
+    background: #fff;
+    margin: 30px auto;
+    border: 1px solid #D7D9DA;
+    padding: 40px;
+    min-height: 85vh;
+    margin-top: 80px;
+
+    .articleTab {
+        width: 200px;
+        border: 1px solid rgba(27, 31, 36, 0.15);
+        border-radius: 6px;
+        box-shadow: inset 0px 1px 0px rgb(255 255 255 / 25%);
+        overflow: hidden;
+        font-size: 12px;
+        margin: 30px 0 50px 0;
+
+        div {
+            padding: 6px 12px;
+            gap: 8px;
+            width: 100px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background: #F6F8FA;
+
+            &.active {
+                color: #fff;
+                background: #3D7956;
+            }
+        }
+
+    }
+
+    .followItem {
+        margin-bottom: 38px;
+
+        p {
+            margin-top: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .follow {
+        width: 100%;
+        margin-top: 50px;
+        border: none;
+        padding: 16px;
+        min-height: 100vh;
+
+        .articleTab {
+            margin: 16px 0;
+        }
+    }
+}

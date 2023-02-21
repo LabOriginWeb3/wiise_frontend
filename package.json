@@ -1,0 +1,33 @@
+{
+  "name": "really",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.10",
+    "@rainbow-me/rainbowkit": "^0.8.1",
+    "@react-aria/ssr": "^3.4.1",
+    "@walletconnect/auth-client": "^1.0.1",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@zeit/next-css": "^1.0.1",
+    "add": "^2.0.6",
+    "ethers": "^5.7.2",
+    "express": "^4.18.2",
+    "next": "13.0.4",
+    "node-fetch": "^2.6.1",
+    "or": "^0.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.56.1",
+    "wagmi": "^0.9.5",
+    "web3": "^1.7.4",
+    "web3modal": "^1.9.10",
+    "yarn": "^1.22.19"
+  }
+}

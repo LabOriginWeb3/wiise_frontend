@@ -1,0 +1,101 @@
+.modalMain {
+
+    display: flex;
+    align-items: self-start;
+    width: 100%;
+}
+
+.reply {
+    width: 100%;
+
+    textarea {
+        width: 100%;
+        height: 127px;
+        border: none;
+        background: #F6F8FA;
+        padding: 10px;
+        border: 1px solid #D7D9DA;
+        box-shadow: inset 0px 1px 0px rgb(208 215 222 / 20%);
+        border-radius: 6px 6px 0px 0px;
+        resize: none;
+        &:hover {
+            border: 1px solid #3D7956;
+        }
+    }
+
+    .replyOp {
+        background: #FFFFFF;
+        border-width: 0px 1px 1px 1px;
+        border-style: solid;
+        border-color: #D7D9DA;
+        border-radius: 0px 0px 6px 6px;
+        height: 32px;
+        margin-top: -6px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        align-items: center;
+        padding-right: 20px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+.title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #000000;
+    margin: 8px 0;
+}
+
+.pollInfo {
+    border: 1px solid #D7D9DA;
+    border-radius: 6px;
+    padding: 15px 10px 10px 10px;
+}
+
+.removeBut {
+    background: #fff;
+    border: 1px solid #D7D9DA;
+    border-radius: 6px;
+    color: #EB5757;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.walletList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .walletItem {
+        background-color: rgb(232, 236, 251);
+        padding: 1rem;
+        outline: none;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(173, 188, 255, 0.24);
+        }
+
+        img {
+            height: 28px;
+            width: 28px;
+        }
+    }
+}
+
+.menuItem{
+    cursor: pointer;
+    font-size: 15px;
+}

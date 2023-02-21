@@ -1,0 +1,42 @@
+.h5Menu {
+    display: none;
+}
+
+@media screen and (max-width: 798px) {
+    .h5Menu {
+        display: flex;
+        height: 64px;
+        position: fixed;
+        bottom: 0;
+        background: #F6F8FA;
+        border-top: 1px solid #D7D9DA;
+        width: 100%;
+        z-index: 999;
+
+        div {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            cursor: pointer;
+
+            p {
+                width: 100%;
+                text-align: center;
+                margin-top: -20px;
+                letter-spacing: 0.2px;
+                color: #9E9E9E;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            &.active{
+                p{
+                    color: #3E835F;
+                }
+            }
+        }
+    }
+}

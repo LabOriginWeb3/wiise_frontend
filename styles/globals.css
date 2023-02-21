@@ -1,0 +1,832 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./font/Poppins-Black.ttf);
+  font-weight: 900;
+}
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: "Poppins" !important;
+  background: #F5FBF8;
+  font-size: 14px;
+  color: #000000;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+
+div {
+  font-family: "Poppins" !important;
+}
+
+p,
+small {
+  font-family: "Poppins" !important;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins" !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
+.userBorder {
+  border: 1px solid #D7D9DA;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+.userBorder:hover {
+  background: #F6F8FA;
+}
+
+.userBorder:active {
+  background: #ECECEC;
+}
+
+.standard_font {
+  font-size: var(--nextui-fontSizes-sm) !important;
+  color: #fff;
+  line-height: var(--nextui-lineHeights-sm);
+  text-transform: capitalize;
+  font-weight: var(--nextui-fontWeights-medium) !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.justify_align_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify_space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_align_start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex_align_center {
+  display: flex;
+  align-items: center;
+}
+
+.flex_warp_end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.flex_between_end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.navbar_underline li:after {
+  height: 2px !important;
+}
+
+.greenButton {
+  height: 32px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: #3D7956;
+}
+
+.greenButton:hover {
+  background: #4C956A;
+}
+
+.greenButton:active {
+  background: #3D7956;
+}
+
+.helpForNovices {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: #3D7956;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.helpForNovices:hover {
+  background: #4C956A;
+}
+
+.greenButton_border {
+  height: 24px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #3D7956;
+  background: #fff;
+  color: #3D7956;
+}
+
+.mini_white_button {
+  height: 24px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-size: 12px;
+  border: 1px solid #D7D9DA;
+  color: #525252;
+  letter-spacing: 0.32px;
+}
+
+.mini_white_button:hover {
+  background: #F6F8FA;
+}
+
+.mini_white_button:active {
+  background: #ECECEC;
+}
+
+.md_white_button {
+  height: 32px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid #D7D9DA;
+  color: #525252;
+}
+
+.md_white_button:hover {
+  background: #F6F8FA;
+}
+
+.md_white_button:active {
+  background: #ECECEC;
+}
+
+.userInfo .nextui-user-name {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  color: #000000;
+
+}
+
+.userInfo .nextui-avatar-img {
+  cursor: pointer;
+}
+
+.userInfo .nextui-user-desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #AEAEAE;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+  max-width: 200px;
+}
+
+.userFollow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 500;
+}
+
+.userFollow p {
+  font-size: 14px;
+}
+
+.userFollow span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.messageTips {
+  position: fixed;
+  z-index: 9999;
+  top: 45px;
+  right: 20px;
+}
+
+.messageTips>div {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.15px;
+  color: #24292F;
+  border-radius: 6px;
+  width: 560px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.messageTips>div p {
+  margin-left: 10px;
+}
+
+.messageTips>div span {
+  cursor: pointer;
+}
+
+.messageTips .info {
+  background: #DDF4FF;
+  border: 1px solid rgba(84, 174, 255, 0.4);
+}
+
+.messageTips .warning {
+  background: #FFF8C5;
+  border: 1px solid rgba(212, 167, 44, 0.4);
+}
+
+.messageTips .error {
+  background: #FFEBE9;
+  border: 1px solid rgba(255, 129, 130, 0.4);
+}
+
+.messageTips .success {
+  background: #DAFBE1;
+  border: 1px solid rgba(74, 194, 107, 0.4);
+}
+
+.addModal {
+  max-width: 700px !important;
+  margin: auto;
+}
+
+.inputK label {
+  border: 1px solid #D7D9DA;
+  border-radius: 6px;
+  background: #F6F8FA;
+}
+
+
+.inputK div {
+  border: 1px solid #D7D9DA;
+  border-radius: 6px;
+  background: #F6F8FA;
+}
+
+.inputK input {
+  font-size: 14px;
+}
+
+.addBut {
+  width: 24px;
+  height: 24px;
+  background: #F7F7F7;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.addBut:hover {
+  background: #ECECEC;
+}
+
+.addBut:active {
+  background: #ECECEC;
+}
+
+
+.autoButton {
+  background: #fff;
+  border: 1px solid #D7D9DA;
+  border-radius: 6px
+}
+
+.autoButton:hover {
+  background: #F6F8FA;
+}
+
+.autoButton:active {
+  background: #ECECEC;
+}
+
+.autoGreenButton {
+  background: #fff;
+  border: 1px solid #3D7956;
+  border-radius: 6px;
+  color: #3D7956;
+}
+
+.addIcon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.margin10 {
+  margin: 10px 0;
+}
+
+.margin10_5 {
+  margin: 10px 0 5px 0;
+}
+
+.greenC {
+  width: 10px;
+  height: 10px;
+  background: #14D647;
+  border-radius: 50px;
+}
+
+.title18 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.title12 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.title12_w {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
+.title12_spa {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.32px;
+}
+
+.title12_grey {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  color: #AEAEAE;
+}
+
+.title14 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  color: #000000;
+}
+
+.title14G {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.15px;
+  color: #AEAEAE
+}
+
+.view_all {
+  color: #525252;
+  font-style: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+}
+
+.showMore {
+  color: #3D7956;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+
+.grayButton {
+  width: 100%;
+  height: 24px;
+  background: #ECECEC;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.gap10 {
+  display: flex;
+  gap: 10px;
+}
+
+.gap52 {
+  gap: 52px;
+}
+
+.pchidden {
+  display: none !important;
+}
+
+.searchInput {
+  width: 358px;
+}
+
+.wicenter {
+  width: 100%;
+  text-align: center;
+}
+
+.nameAfollow {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}
+
+.marginLeft30 {
+  margin-left: 30px;
+}
+
+
+
+.fixedRate {
+  position: absolute !important;
+  color: green !important;
+  margin-top: -16px !important;
+  font-size: 14px !important;
+  margin-left: -25px !important
+}
+
+.marginTop18 {
+  margin-top: -18px !important;
+}
+
+.marginTop32 {
+  margin-top: -32px !important;
+  margin-left: 10px !important;
+}
+
+.connUser {
+  position: fixed;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.contentMore {
+  /* font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px; */
+  /* color: #525252; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-top: 10px;
+  color: #000;
+  white-space: pre-wrap;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.contentMore p {
+  font-size: 15px
+}
+
+.contentMore details {
+  background: none;
+}
+
+.contentMore details summary {
+  font-size: 20px;
+}
+
+.contentMore figure {
+  white-space: pre-wrap;
+  display: flex;
+  background: rgba(241, 241, 239, 1);
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px 0;
+  page-break-inside: avoid;
+  line-height: 25px;
+}
+
+.contentMore h3 {
+  margin-top: 20px;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5FBF8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(132deg,
+      #3D7956 100%,
+      #3D7956 100%);
+}
+
+.clickMouse2 {
+  position: absolute;
+  display: flex;
+  z-index: 999999;
+}
+
+.clickMouse2 img {
+  width: 50px;
+}
+
+.clickMouse2 .left {
+  transform: rotate(270deg);
+}
+
+.clickMouse2 .top {
+  transform: rotate(0deg);
+}
+
+.clickMouse {
+  /* position: absolute; */
+  display: flex;
+  z-index: 999999;
+}
+
+.clickMouse img {
+  width: 50px;
+}
+
+.clickMouse .left {
+  transform: rotate(270deg);
+}
+
+.clickMouse .top {
+  transform: rotate(0deg);
+}
+
+.caseStepTip {
+  /* position: absolute;
+  z-index: 999999; */
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px #E7B750;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 450px;
+}
+
+.caseStepTip img {
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+}
+
+.caseStepTip .down {
+  transform: rotate(180deg)
+}
+
+.caseStepTip p {
+  display: flex;
+  align-items: center;
+}
+
+#stepTip {
+  position: absolute;
+  z-index: 999999;
+}
+
+.tipInfoSpan {
+  font-style: italic;
+  font-size: 13px;
+  color: #AEAEAE;
+}
+
+.avatar1 {
+  margin-left: -24px !important;
+}
+
+.Logo {
+  width: 80px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.h5hidden {
+  display: flex;
+}
+
+.nextui-navbar-container {
+  max-width: 1400px !important;
+}
+
+.afewLater {
+  width: 100%;
+  position: absolute;
+  color: red;
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.afewLater img {
+  width: 80%;
+  margin-left: -15px;
+}
+
+.checkboxGroup {
+  margin-top: -10px;
+}
+
+.checkboxGroup span {
+  font-size: 12px;
+}
+
+.checkboxGroup .nextui-c-fixGjY {
+  display: block;
+}
+
+.checkboxGroup .nextui-c-fixGjY label {
+  margin-left: 10px;
+}
+
+.caseNext {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1600px) {
+  .nextui-navbar-container {
+    max-width: 1300px !important;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .pchidden {
+    display: block !important;
+  }
+
+  .h5hidden {
+    display: none !important;
+  }
+
+  .h5none {
+    display: none !important;
+  }
+
+  .gap52 {
+    gap: 10px;
+  }
+
+  .h5Right {
+    justify-content: right;
+    width: 100%;
+  }
+
+  .addModal {
+    max-width: 90% !important;
+  }
+
+  .searchInput {
+    width: 200px;
+  }
+
+  .caseStepTip {
+    max-width: 300px;
+  }
+
+  .userInfo .nextui-user-desc {
+    max-width: 150px;
+  }
+
+  h2 {
+    font-size: 22px !important
+  }
+
+  .marginLeft30 {
+    margin-left: 0;
+  }
+
+  .h5FlexWarp {
+    flex-wrap: wrap;
+  }
+
+  .nextui-c-hhqfap-gqZKcP-disableBlur-false .nextui-c-egxOLa {
+    background: #fff;
+  }
+
+  .contentMore {
+    font-size: 12px;
+  }
+
+  .contentMore p {
+    font-size: 12px;
+  }
+}
