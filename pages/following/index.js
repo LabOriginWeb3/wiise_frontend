@@ -13,7 +13,7 @@ function Following({ followersData, followingData }) {
     };
     return (
         <div>
-            <Head  />
+            <Head />
             <H5Header />
             <div className={styles.follow}>
                 <User
@@ -58,7 +58,7 @@ function Following({ followersData, followingData }) {
                                     className="userInfo"
                                     src={!item.photo ? "/images/photo/avatar1.jpg" : item.photo}
                                 />
-                                <Button auto  className="md_white_button">Following</Button>
+                                <Button auto className="md_white_button">Following</Button>
                             </div>
                             <p>{item.bio}</p>
                         </div>
@@ -84,9 +84,10 @@ export async function getServerSideProps() {
     const res2 = await fetch(`https://wiisetest.socialfi.io/api/follow/getUserAndFollowersById/1`);
     let data2 = await res2.json();
 
+
     return {
         props: {
-            followingData: data1.following, followersData: [data2]
+            followingData: data1.data.following, followersData: [data2.data]
         }
     }
 }
